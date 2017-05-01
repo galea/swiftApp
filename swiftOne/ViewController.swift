@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         if tapCount >=  25 {
             
-            theLable.text = "You have tapped 10 times"
+            theLable.text = "You have tapped 25 times"
         }
         
     }
