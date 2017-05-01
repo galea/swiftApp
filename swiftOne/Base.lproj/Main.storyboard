@@ -33,17 +33,42 @@
                                     <action selector="btnTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5GZ-qD-8A9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMv-US-q2l">
+                                <rect key="frame" x="252" y="184" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="S4b-2M-2UX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y70-Xn-yzG">
+                                <rect key="frame" x="251" y="229" width="100" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LvY-mK-FuQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="y70-Xn-yzG" firstAttribute="top" secondItem="lMv-US-q2l" secondAttribute="bottom" constant="15" id="0Y0-Le-lkX"/>
+                            <constraint firstAttribute="centerX" secondItem="y70-Xn-yzG" secondAttribute="centerX" id="32F-sH-c3e"/>
                             <constraint firstItem="Qe8-cO-zt7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="DcU-C8-gjj"/>
                             <constraint firstAttribute="centerX" secondItem="U5u-Q2-Hq8" secondAttribute="centerX" id="F6n-Av-zM4"/>
                             <constraint firstItem="U5u-Q2-Hq8" firstAttribute="top" secondItem="Qe8-cO-zt7" secondAttribute="bottom" constant="40" id="Foq-mS-hes"/>
+                            <constraint firstAttribute="centerX" secondItem="lMv-US-q2l" secondAttribute="centerX" id="bqg-Zr-jug"/>
                             <constraint firstAttribute="centerX" secondItem="Qe8-cO-zt7" secondAttribute="centerX" id="ded-yK-JqA"/>
+                            <constraint firstItem="lMv-US-q2l" firstAttribute="top" secondItem="U5u-Q2-Hq8" secondAttribute="bottom" constant="23" id="nZ6-PU-Opd"/>
+                            <constraint firstItem="y70-Xn-yzG" firstAttribute="top" secondItem="lMv-US-q2l" secondAttribute="bottom" constant="15" id="pO9-EN-5PB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="lMv-US-q2l" id="y5N-yA-Oqp"/>
+                        <outlet property="text2" destination="y70-Xn-yzG" id="Bcg-nA-y7G"/>
                         <outlet property="theLable" destination="Qe8-cO-zt7" id="0pg-wI-e2p"/>
                     </connections>
                 </viewController>

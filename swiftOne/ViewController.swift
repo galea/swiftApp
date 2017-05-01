@@ -14,16 +14,17 @@ class ViewController: UIViewController {
     
     var tapCount = 0
     
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func btnTap(sender: AnyObject) {
         
+     
+        print(text1.text)
+        print(text2.text)
         
-        tapCount = tapCount + 1
-        print(tapCount)
-        
-        if tapCount >=  25 {
-            
-            theLable.text = "You have tapped 25 times"
-        }
         
     }
     
